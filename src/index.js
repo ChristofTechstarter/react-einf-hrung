@@ -6,19 +6,13 @@ import Titel from "./components/Titel/Titel";
 import TierCard from "./components/TierCard/TierCard";
 import Footer from "./components/Footer/Footer";
 import Diagramm from "./components/Diagramm/Diagramm";
+import TierList from "./components/TierList/TierList";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Titel />
-    <div id="tierList">
-      <TierCard name="Leo" art="Löwe" krankheit="Zahnentzündung" />
-      <TierCard name="Bella" art="Katze" krankheit="Nierenschwäche" />
-      <TierCard name="Max" art="Hund" krankheit="Arthrose" />
-      <TierCard name="Lilli" art="Kaninchen" krankheit="Schnupfen" />
-      <TierCard name="Rex" art="Hund" krankheit="Hüftprobleme" />
-      <TierCard name="Coco" art="Papagei" krankheit="Federverlust" />
-    </div>
+    <TierList />
     <Diagramm />
     <Footer />
   </React.StrictMode>
