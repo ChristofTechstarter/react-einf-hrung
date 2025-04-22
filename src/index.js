@@ -2,19 +2,25 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
-import Titel from "./components/Titel/Titel";
-import TierCard from "./components/TierCard/TierCard";
-import Footer from "./components/Footer/Footer";
-import Diagramm from "./components/Diagramm/Diagramm";
-import TierList from "./components/TierList/TierList";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home/Home";
+import Kontakt from "./pages/Kontakt/Kontakt";
+import About from "./pages/About/About";
+import Faq from "./pages/Faq/Faq";
+import Impressum from "./pages/Impressum/impressum";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Titel />
-    <TierList />
-    <Diagramm />
-    <Footer />
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/kontakt" element={<Kontakt />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/faq" element={<Faq />} />
+        <Route path="/impressum" element={<Impressum />} />
+      </Routes>
+    </Router>
   </React.StrictMode>
 );
 

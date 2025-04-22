@@ -2,9 +2,9 @@ import "./Footer.css";
 
 function Footer() {
   return (
-    <footer>
+    <div id="Footer">
       <p>© 2025 Tierarztpraxis Mustermann – Alle Rechte vorbehalten</p>
-    </footer>
+    </div>
   );
 }
 

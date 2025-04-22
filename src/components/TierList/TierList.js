@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import TierCard from "../TierCard/TierCard";
+import "./TierList.css";
 
 function TierList() {
   const [tiere, setTiere] = useState([]);

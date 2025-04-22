@@ -1,0 +1,10 @@
+#Navbar {
+    border-Radius: 12px;
+          box-Shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+          transition: box-shadow 0.3s ease-in-out;
+          background-Color: #3b3b3b;
+          border: 1px solid #ff3c38;
+          &:hover {
+            box-Shadow: 0 6px 16px rgba(0, 0, 0, 0.7);
+          }
+}
