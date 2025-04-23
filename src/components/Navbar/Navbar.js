@@ -44,6 +44,10 @@ export default function Navbar() {
           <Link to="/faq">{createButton("/faq", "FAQ")}</Link>
 
           <Link to="/impressum">{createButton("/impressum", "Impressum")}</Link>
+
+          <Link to="/pokemon">{createButton("/pokemon", "Pokemon")}</Link>
+
+          <Link to="/starwars">{createButton("/starwars", "Star Wars")}</Link>
         </Toolbar>
       </AppBar>
     </Box>

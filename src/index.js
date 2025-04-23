@@ -8,20 +8,24 @@ import Kontakt from "./pages/Kontakt/Kontakt";
 import About from "./pages/About/About";
 import Faq from "./pages/Faq/Faq";
 import Impressum from "./pages/Impressum/impressum";
+import Pokemon from "./pages/Pokemon/Pokemon";
+import Starwars from "./pages/Starwars/Starwars";
+import PokemonDetail from "./pages/PokemonDetail/PokemonDetail";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/kontakt" element={<Kontakt />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/faq" element={<Faq />} />
-        <Route path="/impressum" element={<Impressum />} />
-      </Routes>
-    </Router>
-  </React.StrictMode>
+  <Router>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/kontakt" element={<Kontakt />} />
+      <Route path="/about" element={<About />} />
+      <Route path="/faq" element={<Faq />} />
+      <Route path="/impressum" element={<Impressum />} />
+      <Route path="/pokemon" element={<Pokemon />} />
+      <Route path="/pokemon/:id" element={<PokemonDetail />} />
+      <Route path="/starwars" element={<Starwars />} />
+    </Routes>
+  </Router>
 );
 
 // If you want to start measuring performance in your app, pass a function
