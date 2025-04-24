@@ -90,6 +90,7 @@ function StarwarsList() {
             variant="outlined"
             onClick={handleLoadMore}
             sx={{
+              display: isLoadingMore || loading ? "none" : "block",
               color: "#c9302d",
               borderColor: "#c9302d",
               "&:hover": { color: "#ff3c38", borderColor: "#ff3c38" },
