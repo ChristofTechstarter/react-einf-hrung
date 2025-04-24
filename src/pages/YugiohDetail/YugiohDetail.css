@@ -1,0 +1,54 @@
+.detailContainer {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    max-width: 900px;
+    gap: 2rem;
+  }
+  
+  .detailImage {
+    width: 300px;
+    border-radius: 1rem;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  }
+  
+  .detailInfo {
+    text-align: center;
+  }
+  
+  .detailInfo h1 {
+    font-size: 2rem;
+    color: #c9302d;
+    margin-bottom: 0.5rem;
+  }
+  
+  .detailType {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 0.5rem;
+  }
+  
+  .detailStats,
+  .detailLevel {
+    font-size: 1.1rem;
+    color: #222;
+    margin-bottom: 0.3rem;
+  }
+  
+  .detailDesc {
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: white;
+    max-width: 600px;
+    margin-inline: auto;
+  }
+  
+  .loadingContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }

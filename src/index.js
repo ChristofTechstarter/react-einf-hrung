@@ -11,6 +11,8 @@ import Impressum from "./pages/Impressum/impressum";
 import Pokemon from "./pages/Pokemon/Pokemon";
 import Starwars from "./pages/Starwars/Starwars";
 import PokemonDetail from "./pages/PokemonDetail/PokemonDetail";
+import Yugioh from "./pages/Yugioh/Yugioh";
+import YugiohDetail from "./pages/YugiohDetail/YugiohDetail";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -24,6 +26,8 @@ root.render(
       <Route path="/pokemon" element={<Pokemon />} />
       <Route path="/pokemon/:id" element={<PokemonDetail />} />
       <Route path="/starwars" element={<Starwars />} />
+      <Route path="/yugioh" element={<Yugioh />} />
+      <Route path="/yugioh/:id" element={<YugiohDetail />} />
     </Routes>
   </Router>
 );

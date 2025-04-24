@@ -81,6 +81,7 @@ function StarwarsList() {
                 variant="rectangular"
                 width={300}
                 height={200}
+                animation={"pulse"}
                 sx={{ borderRadius: "10px" }}
               />
             </div>

@@ -48,6 +48,8 @@ export default function Navbar() {
           <Link to="/pokemon">{createButton("/pokemon", "Pokemon")}</Link>
 
           <Link to="/starwars">{createButton("/starwars", "Star Wars")}</Link>
+
+          <Link to="/yugioh">{createButton("/yugioh", "Yu-Gi-Oh")}</Link>
         </Toolbar>
       </AppBar>
     </Box>
