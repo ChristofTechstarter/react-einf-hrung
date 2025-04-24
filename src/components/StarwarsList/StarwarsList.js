@@ -54,8 +54,13 @@ function StarwarsList() {
       <div className="containerList">
         {loading && people.length === 0
           ? Array.from({ length: limit }).map((_, i) => (
-              <div key={i} style={{ marginBottom: "20px" }}>
-                <Skeleton variant="rectangular" width={300} height={200} />
+              <div key={i}>
+                <Skeleton
+                  variant="rectangular"
+                  width={300}
+                  height={200}
+                  sx={{ borderRadius: "10px" }}
+                />
               </div>
             ))
           : people.map((person) => (
@@ -71,8 +76,13 @@ function StarwarsList() {
 
         {isLoadingMore &&
           Array.from({ length: limit }).map((_, i) => (
-            <div key={`loadMore-${i}`} style={{ marginBottom: "20px" }}>
-              <Skeleton variant="rectangular" width={300} height={200} />
+            <div key={`loadMore-${i}`}>
+              <Skeleton
+                variant="rectangular"
+                width={300}
+                height={200}
+                sx={{ borderRadius: "10px" }}
+              />
             </div>
           ))}
       </div>
