@@ -14,7 +14,14 @@ function PokemonDetail() {
       .then((data) => setPokemon(data));
   }, [id]);
 
-  if (!pokemon) return <p>Lade...</p>;
+  if (!pokemon)
+    return (
+      <>
+        <Navbar />
+        <p>Lade...</p>
+        <Footer />
+      </>
+    );
 
   return (
     <>
